@@ -1,0 +1,16 @@
+//this is a basic plugin in which i learned basics of plugins and their usage.\
+ //The use of ABSPATH helps you to maintain your security by preventing unauthorized access to files outsidethe wordpress installation directory 
+  
+     
+     
+     <?php
+     /**
+      * Plugin Name: My First Plugin
+      */
+     add_action('admin_notices', function() {
+         echo '<div class="notice notice-success">Hello! I am a plugin.</div>';
+     });
+     ```
+     if (!defined('ABSPATH')) {
+        exit();
+     }
