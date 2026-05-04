@@ -7,10 +7,11 @@
      /**
       * Plugin Name: My First Plugin
       */
+      if (!defined('ABSPATH')) {
+        exit();
+     }
      add_action('admin_notices', function() {
          echo '<div class="notice notice-success">Hello! I am a plugin.</div>';
      });
      ```
-     if (!defined('ABSPATH')) {
-        exit();
-     }
+     
